@@ -27,7 +27,7 @@ show_true_heading = false;
 % set up conditions and trial sequence
 % first independent variable: whether (1) or not (0) to simulate eye rotation
 % second independent variable: horizontal heading directions
-independent_variable_sets = {[-20 10 0 10 20]};
+independent_variable_sets = {[-20 10 0 10 20]}; # heading variables
 [independent_variable_1] = ndgrid(independent_variable_sets{:});
 conditions = [independent_variable_1(:)];
 trials = repmat(conditions,ntrials,1);
